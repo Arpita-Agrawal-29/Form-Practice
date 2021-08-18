@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Bio Data</title>
+          <script>       
+   function myfunction(){
+   let fname = document.getElementById('fname').value;
+   document.getElementById("fname1").value = fname;
+   
+   let mname = document.getElementById('mname').value;
+   document.getElementById("mname1").value = mname;
+   
+     let lname = document.getElementById('lname').value;
+   document.getElementById("lname1").value = lname;
+   
+    let email = document.getElementById('email').value;
+   document.getElementById("email1").value = email;
+   
+   let Mnumber = document.getElementById('Mnumber').value;
+   document.getElementById("Mnumber1").value = Mnumber;
+   
+   let iddob = document.getElementById('iddob').value;
+   document.getElementById("iddob1").value = iddob;
+   
+   let dropdown = document.getElementById('dropdown').value;
+   document.getElementById("dropdown1").value = dropdown;
+   
+//       let radio1 = document.getElementsByClassName('radio').value;
+//    document.getElementsByClassName("radio1").value = radio1;
+
+    let comments = document.getElementById('comments').value;
+   document.getElementById("comments1").value = comments;
+   
+    let idpincode = document.getElementById('idpincode').value;
+   document.getElementById("idpincode1").value = idpincode;
+   
+   let language = document.getElementById('language').value;
+   document.getElementById("language1").value = language;
+   
+
+   }
+</script>
+
+  </head>
+  <body>
+    <header></header>
+    <main>
+<body>
+
+<h1 id="title">Bio Data Form</h1>
+<div id="form-outer">
+  <p id="description">
+    To know the details of students
+  </p>
+  <form id="survey-form" method="GET" action="">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="fname2" for="fname">First Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="fname" id="fname" class="input-field" placeholder="Enter your first name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="mname2" for="mname">Middle Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="mname" id="mname" class="input-field" placeholder="Enter your middle name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="lname2" for="lname">Last Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="lname" id="lname" class="input-field" placeholder="Enter your last name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email2" for="email">Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="Mnumber2" for="Mnumber">Mobile Number: </label>
+      </div>
+      <div class="rightTab">
+        <input type="Mnumber" name="Mnumber" id="Mnumber" min="0" max="10" class="input-field" placeholder="Enter your mobile number" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="dob-label2" for="dob">D.O.B: </label>
+      </div>
+      <div class="rightTab">
+        <input type="date" name="dob" id="iddob" class="input-field" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="department">Education: </label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="department" class="dropdown">
+        <option disabled value>Select an option</option>
+        <option value="b.e">B.E</option>
+        <option value="b.tech">B.Tech</option>
+        <option value="mca">MCA</option>
+        <option value="mbs">MBA</option>
+        <option value="bsc">BSC</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender">Gender: </label>
+      </div>
+      <div class="rightTab" id="radio">
+        <ul style="list-style: none;">
+          <li class="radio"><label><input name="radio-buttons" value="male"  type="radio" class="userRatings" >Male</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="female"  type="radio" class="userRatings" >Female</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="others"  type="radio" class="userRatings" >Others</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="address">Address: </label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Enter your address here..."></textarea>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="pincode">Pincode: </label>
+      </div>
+      <div class="rightTab">
+       <input type="number" name="pincode" id="idpincode" class="input-field" style="height:20px;resize:vertical;" placeholder="6 - - - - -"></div>
+    </div>
+    
+       <div class="rowTab">
+      <div class="labels">
+        <label for="language">Hobbies: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="language" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="playing" type="checkbox" class="userRatings">Playing Games</label></li>
+          <li class="checkbox"><label><input name="prefer" value="travelling" type="checkbox" class="userRatings">Travelling</label></li>
+          <li class="checkbox"><label><input name="prefer" value="ridding" type="checkbox" class="userRatings">Ridding Books</label></li>
+          <li class="checkbox"><label><input name="prefer" value="drawing" type="checkbox" class="userRatings">Drawing</label></li>
+          <li class="checkbox"><label><input name="prefer" value="cooking" type="checkbox" class="userRatings">Cooking</label></li>
+        </ul>
+      </div>
+    </div>
+    <a onclick="myfunction()" id="submit">Submit</a>
+    <button id="reset" type="reset">Reset</button>
+  </form>
+  
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  <h1 id="title">Submited Form</h1>
+<div id="form-outer"> 
+  <p id="description">
+    To know the details of students
+  </p>
+    <form id="survey-form" method="GET" action="">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="fname2" for="fname">First Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="fname1" id="fname1" class="input-field" placeholder="Enter your first name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="mname2" for="mname">Middle Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="mname1" id="mname1" class="input-field" placeholder="Enter your middle name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="lname2" for="lname">Last Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="lname1" id="lname1" class="input-field" placeholder="Enter your last name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email1" id="email1" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="Mnumber" for="Mnumber">Mobile Number: </label>
+      </div>radio1
+      <div class="rightTab">
+        <input type="Mnumber" name="Mnumber1" id="Mnumber1" min="0" max="10" class="input-field" placeholder="Enter your mobile number" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="dob-label" for="dob">D.O.B: </label>
+      </div>
+      <div class="rightTab">
+        <input type="date" name="dob" id="iddob1" class="input-field" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="department">Education: </label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown1" name="department" class="dropdown">
+        <option disabled value>Select an option</option>
+        <option value="b.e">B.E</option>
+        <option value="b.tech">B.Tech</option>
+        <option value="mca">MCA</option>
+        <option value="mbs">MBA</option>
+        <option value="bsc">BSC</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender">Gender: </label>
+      </div>
+      <div class="rightTab" id="radio1">
+        <ul style="list-style: none;">
+          <li class="radio"><label><input name="radio-buttons" value="male"  type="radio" class="userRatings" >Male</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="female"  type="radio" class="userRatings" >Female</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="others"  type="radio" class="userRatings" >Others</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="address">Address: </label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments1" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Enter your address here..."></textarea>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="pincode">Pincode: </label>
+      </div>
+      <div class="rightTab">
+       <input type="number" name="pincode" id="idpincode1" class="input-field" style="height:20px;resize:vertical;" placeholder="6 - - - - -"></div>
+    </div>
+    
+       <div class="rowTab">
+      <div class="labels">
+        <label for="language">Hobbies: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="language1" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="playing" type="checkbox" class="userRatings">Playing Games</label></li>
+          <li class="checkbox"><label><input name="prefer" value="travelling" type="checkbox" class="userRatings">Travelling</label></li>
+          <li class="checkbox"><label><input name="prefer" value="ridding" type="checkbox" class="userRatings">Ridding Books</label></li>
+          <li class="checkbox"><label><input name="prefer" value="drawing" type="checkbox" class="userRatings">Drawing</label></li>
+          <li class="checkbox"><label><input name="prefer" value="cooking" type="checkbox" class="userRatings">Cooking</label></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+
+
+
+
+    </main>
+    <footer></footer>
+  </body>
+</html>
